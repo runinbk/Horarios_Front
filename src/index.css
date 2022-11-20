@@ -12,3 +12,26 @@ html {
   box-sizing: inherit;
 }
 
+.pagina{
+  width: 100%;
+  
+  background: rgb(0, 110, 255);
+  box-shadow: 1px 3px 5px black;
+}
+
+.pagina ul{
+  padding: 40px;
+  display: flex;
+  
+}
+.pagina li{
+  list-style: none;
+  
+}
+
+.links{
+  font-size:30px;
+  margin-left: 20px;
+  text-decoration: none;
+  
+}
