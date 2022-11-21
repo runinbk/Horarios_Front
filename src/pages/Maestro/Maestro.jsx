@@ -1,9 +1,14 @@
 import { Layout } from "../../components/Layout";
-
+import { Link } from "react-router-dom";
+import { Seleccionalumno } from "../../components/SeleccionAlumno";
 const Maestro = () => {
     return (
-
-        <h1>From Maestro Page</h1>
+        <div className="contenedor">
+            <div className="seleccion_alumno">
+               <Seleccionalumno/>    
+               
+            </div>      
+        </div>
 
     );
 }
