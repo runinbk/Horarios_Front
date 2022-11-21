@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --white: #FFF;
+  --black: #000;
+  --gray: #F7F7F8;
+  --sky-blue: #AFD2FE;
+  --purple: #D8BCFE;
+  --brown: #B9A8A6;
+  --darker-gray: #646A8C;
+  --orange: #F7582D;
+  --blue: #3247D8;
+}
 
 *,
 html {
@@ -12,3 +25,142 @@ html {
   box-sizing: inherit;
 }
 
+/* Globals */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--gray);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+/* Button */
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  border: none;
+
+}
+
+.btn.aside {
+  background-color: #6371ce;
+  color: var(--white);
+  border-radius: 8px;
+  padding: .2rem;
+}
+
+.btn.aside.active {
+  margin-right: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 4rem;
+  padding: 1rem 0;
+  background-color: var(--white);
+  transition: width .3s;
+  overflow-x: hidden;
+}
+
+
+
+.sidebar.active {
+  width: 15.625rem;
+}
+
+.aside.action {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  transition: justify-content .50s;
+}
+
+.aside span {
+  font-size: 2.1rem;
+
+}
+
+.aside.action.active {
+  justify-content: flex-end;
+  transition: justify-content .3s;
+}
+
+.aside-menu-list {
+  margin-top: 2rem;
+  overflow-y: auto;
+}
+
+.aside-item {
+  margin-top: .5rem;
+  white-space: nowrap;
+}
+
+
+.aside-link:hover {
+  background-color: var(--gray);
+  font-weight: bold;
+}
+
+.aside-link:hover>.aside-icon {
+  color: var(--blue);
+}
+
+
+.aside-link.active,
+.aside-icon.active {
+
+  background-color: var(--gray);
+  font-weight: bold;
+  color: var(--blue);
+}
+
+
+
+
+.aside-icon {
+  font-size: 2rem;
+  color: var(--darker-gray);
+}
+
+.aside-link {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0 .5rem .5rem;
+  border-radius: 1rem;
+  margin: 0 .5rem;
+  overflow-x: hidden;
+}
+
+
+.link-text {
+  margin-left: 1rem;
+  color: var(--black);
+  font-size: 16px;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 1rem 1rem 0 1rem;
+  overflow-y: auto;
+}

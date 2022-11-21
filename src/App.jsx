@@ -1,12 +1,26 @@
-
-import './App.css'
-
+import {
+  BrowserRouter as Router,
+  Route,
+  BrowserRouter,
+  Routes
+} from "react-router-dom";
+import { Layout } from "./components/Layout";
+import { Devs, Maestro } from "./pages";
 function App() {
 
-
   return (
-    <h1>Horarios Front Boilerplate</h1>
-  )
+    <>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Maestro />} />
+            <Route path="/devs" element={<Devs />} />
+            <Route path="*" element={<>Not found 404</>} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App
