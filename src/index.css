@@ -245,6 +245,8 @@ a {
 
   margin-bottom: 40px;
   margin-top: 10px;
+  width: 100%;
+ 
 
 }
 
@@ -276,6 +278,7 @@ a {
 
 .subtitulo_cardmaterias h2 {
   margin-top: 10px;
+  color: white;
 }
 
 .boton_cardmaterias {
@@ -338,18 +341,19 @@ a {
   margin-top: 30px;
   color: white;
 
-  width: 250px;
+  width: 320px;
   border-bottom: solid 2px rgb(255, 255, 255);
 }
 
 .cardmaterias h2 {
   margin-left: 30px;
   margin-top: 20px;
-  color: white;
+  
 
 }
 
 .cardmaterias input {
+  position: relative;
   width: 30px;
   height: 30px;
   margin-top: 10px;

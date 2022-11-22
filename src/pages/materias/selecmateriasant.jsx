@@ -1,36 +1,37 @@
+
 import { Contenedorcardmaterias } from "../../components/CardDeMaterias/contenedorcardmaterias";
 import { Titulocardmaterias } from "../../components/CardDeMaterias/titulocardmaterias";
 
 const lista=[
     {id:1,
-     materia:"1er semestre",
-     sigla:"MAT101",
+     materia:"Calculo2",
+     sigla:"MAT102",
      grupos_asignados:15,  
      seleccion:true 
     },
     {id:2,
-        materia:"2do semestre",
+        materia:"algebra",
         sigla:"INF119",
         grupos_asignados:11,
         seleccion:true
 
        },
        {id:3,
-        materia:"3er semestre",
+        materia:"Fisica III",
         sigla:"FIS100",
         grupos_asignados:11,
         seleccion:false
 
        },
        {id:4,
-        materia:"4to semestre",
+        materia:"Ingles Tecnico II",
         sigla:"LIN100",
         grupos_asignados:8,
         seleccion:false
 
        },
        {id:5,
-        materia:"5to semestre",
+        materia:"Programacion II",
         sigla:"INF110",
         grupos_asignados:14,
         seleccion:false
@@ -40,17 +41,18 @@ const lista=[
 ];
 
 
-export const Antiguo=()=>{
+export const Selecmateriasant=()=>{
     return(
       <div>
           <Titulocardmaterias 
             categoria="Antiguo Ingreso" 
-            subtitulo="Seleccione El/Los Semestre(S) de sus materias" 
+            subtitulo="Selccione Las Materias a Inscribir" 
             boton="SIGUIENTE"
-            direccion="/antiguo/materiasInscribir"
+            direccion="/antiguo/materiasInscribir/grupos"
           />
           <Contenedorcardmaterias 
             lista={lista}
+           
           />  
       </div>  
        

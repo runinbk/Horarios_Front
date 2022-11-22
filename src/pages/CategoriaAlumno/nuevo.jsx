@@ -46,12 +46,14 @@ export const Nuevo=()=>{
     return(
       <div>
           <Titulocardmaterias 
-            categoria="NUEVO INGRESO" 
-            subtitulo="SELECCIONE LAS MATERIAS A INSCRIBIR" 
+            categoria="Nuevo Ingreso" 
+            subtitulo="Seleccione Las Materias a Inscribir" 
             boton="SIGUIENTE"
+            direccion="/nuevo/grupos"
           />
           <Contenedorcardmaterias 
             lista={lista}
+           
           />  
       </div>  
        
