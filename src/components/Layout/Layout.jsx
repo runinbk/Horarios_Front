@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     useEffect(() => {
         const handleClick = event => {
             const { innerWidth: width } = window;
-            if (width < 480) {
+            if (width <= 640) {
                 setIsOpen(false);
             }
         };
