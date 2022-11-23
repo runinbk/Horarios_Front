@@ -220,6 +220,7 @@ a {
   border-radius: 10px;
   box-shadow: 1px 1px 5px black;
   background: rgba(90, 78, 255, 0.681);
+  border: solid 5px black;
 }
 
 .seleccion_alumno h1 {
@@ -349,6 +350,7 @@ a {
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
   margin: 20px;
+  border:  solid 5px black;
 
 
 
@@ -369,6 +371,11 @@ a {
   color: white;
   
 
+}
+.cardmaterias h3{
+  margin-left: 30px;
+  margin-top: 15px;
+  color: white;
 }
 
 .cardmaterias input {

@@ -1,41 +1,46 @@
-import { Contenedorcardmaterias } from "../../components/CardDeMaterias/contenedorcardmaterias";
+
 import { Titulocardmaterias } from "../../components/CardDeMaterias/titulocardmaterias";
+import { Contenedorcardsemestres } from "../../components/Cardsemestres/contenedorcardsemestre";
 
 const lista=[
     {id:1,
-     materia:"1er semestre",
-     sigla:"MAT101",
-     grupos_asignados:15,  
-     seleccion:true 
+     semestre:"1er semestre",
+     materia1:"Ingles I", 
+     materia2:"Calculo I",
+     materia3:"Introduccion a la Informatica",
+     materia4:"Fisica I",
+     materia5:"Estructuras discretas", 
+     materia6:"",
+     materia7:"",
+     materia8:"",
+     seleccion:true
     },
     {id:2,
-        materia:"2do semestre",
-        sigla:"INF119",
-        grupos_asignados:11,
-        seleccion:true
+      semestre:"2do semestre",
+      materia1:"Ingles II", 
+      materia2:"Calculo II",
+      materia3:"Programacion I",
+      materia4:"Fisica II",
+      materia5:"Algebra I", 
+      materia6:"",
+      materia7:"",
+      materia8:"",
+      seleccion:true
+     },
+     {id:3,
+      semestre:"3er semestre",
+      materia1:"Administracion", 
+      materia2:"Ecuaciones Diferenciales",
+      materia3:"Programacion II",
+      materia4:"Fisica III",
+      materia5:"Arquitectura", 
+      materia6:"marketing",
+      materia7:"",
+      materia8:"",
+      seleccion:true
+     }
 
-       },
-       {id:3,
-        materia:"3er semestre",
-        sigla:"FIS100",
-        grupos_asignados:11,
-        seleccion:false
-
-       },
-       {id:4,
-        materia:"4to semestre",
-        sigla:"LIN100",
-        grupos_asignados:8,
-        seleccion:false
-
-       },
-       {id:5,
-        materia:"5to semestre",
-        sigla:"INF110",
-        grupos_asignados:14,
-        seleccion:false
-
-       }
+    
 
 ];
 
@@ -49,7 +54,7 @@ export const Antiguo=()=>{
             boton="SIGUIENTE"
             direccion="/antiguo/materiasInscribir"
           />
-          <Contenedorcardmaterias 
+          <Contenedorcardsemestres 
             lista={lista}
           />  
       </div>  
