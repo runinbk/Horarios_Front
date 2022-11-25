@@ -6,7 +6,8 @@ export const Contenedorcardmaterias=({lista})=>{
         <div className="contenedor_cardmaterias">
                { lista.map(card=>(
                  <div className="cardmaterias" key={card.id}>
-                    <Cardmaterias 
+                    <Cardmaterias
+                      id={card.id} 
                       materia={card.materia} 
                       sigla={card.sigla} 
                       grupos_asignados={card.grupos_asignados} 
