@@ -7,7 +7,11 @@ export const Contenedorcardsemestres=({lista})=>{
         <div className="contenedor_cardmaterias">
                { lista.map(card=>(
                  <div className="cardmaterias" key={card.id}>
+<<<<<<< HEAD
                     <Cardsemestres 
+=======
+                    <Cardsemestres
+>>>>>>> 511f3b825f594e2bec905b56966f6f71c098b08d
                       id={card.id}
                       semestre={card.semestre} 
                       materia1={card.materia1} 
