@@ -8,13 +8,13 @@ const lista=[
      materia:"Calculo1",
      sigla:"MAT101",
      grupos_asignados:15,  
-     seleccion:true 
+     seleccion:false 
     },
     {id:2,
         materia:"Estructuras Discretas",
         sigla:"INF119",
         grupos_asignados:11,
-        seleccion:true
+        seleccion:false
 
        },
        {id:3,

@@ -219,7 +219,7 @@ a {
   background: rgba(74, 22, 158, 0);
   border-radius: 10px;
   box-shadow: 1px 1px 5px black;
-  background: rgba(90, 78, 255, 0.681);
+  background: rgba(70, 20, 198, 0.703);
   border: solid 5px black;
 }
 
@@ -386,4 +386,87 @@ a {
   margin-bottom: 30px;
   margin-left: 180px;
   border: none;
+}
+
+
+.bloque1{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+  
+}
+
+.contenedor_table{
+  width:670px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  background: rgba(20, 46, 191, 0);
+  border: solid 5px rgb(255, 255, 255);
+  box-shadow: 1px 2px 7px black;
+  border-radius: 10px;
+  margin-top: 100px;
+  
+  
+  
+  
+
+}
+.contenedor_table h1{
+  text-align: center;
+  text-decoration: underline;
+  width:100%;
+  color: white;
+  background:rgb(0, 0, 0);
+  border-bottom: solid 3px white;
+}
+
+
+
+.contenedor_card{
+ height:400px;
+ width:100%;
+ background: rgba(255, 255, 255, 0);
+ 
+}
+
+.tiket{
+  
+  
+  
+  height: 20px;
+  width: 20px;
+}
+
+.cabeza_lista{
+  font-size: 15px;
+  background: rgba(24, 44, 203, 0.686);
+  
+  
+  
+  
+  
+
+}
+
+.cabeza_lista th{
+  
+  font-size: 13px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration:underline;
+  border-bottom: solid 4px rgb(255, 255, 255);
+}
+
+.cabeza_lista td{
+  font-size: 13px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-bottom: solid 4px rgb(255, 255, 255);
+    
 }
