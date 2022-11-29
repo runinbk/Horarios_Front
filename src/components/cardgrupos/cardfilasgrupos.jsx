@@ -21,7 +21,7 @@ export const Cardfilasgrupos=({id,grupo,semestre,docente,dia1,dia2,dia3})=>{
             <td>{dia1}</td>
             <td>{dia2}</td>
             <td>{dia3}</td>
-            <td> <input className="tiket" type="checkbox" name={id} onClick={handlesudmi} checked={estado}/></td>
+            <td> <input className="tiket" type="checkbox" name={id} onClick={handlesudmi}/></td>
    
         </>
     );
